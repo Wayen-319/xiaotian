@@ -288,7 +288,7 @@ function drawTreeChart(treeData, data) {
 
 onMounted(async () => {
   try {
-    const res = await fetch('public/b.json');
+    const res = await fetch('xiaotian/b.json');
     if (!res.ok) throw new Error('b.json not found, using mock data');
     const data = await res.json();
     
